@@ -143,7 +143,7 @@ export default function Certifications() {
         {/* Credentials Overlay Modal */}
         <AnimatePresence>
           {selectedCert && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center px-6">
+            <div className="fixed inset-0 z-50 flex items-center justify-center px-3 sm:px-6 py-4 sm:py-0">
               {/* Backdrop */}
               <motion.div
                 initial={{ opacity: 0 }}
@@ -159,76 +159,76 @@ export default function Certifications() {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 15 }}
                 transition={{ type: "spring", damping: 25, stiffness: 350 }}
-                className="relative w-full max-w-4xl glass-card bg-surface-dim border border-foreground/10 rounded-3xl p-6 sm:p-8 shadow-2xl z-10 text-left overflow-hidden"
+                className="relative w-full max-w-2xl sm:max-w-4xl glass-card bg-surface-dim border border-foreground/10 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl z-10 text-left overflow-hidden max-h-[90vh] sm:max-h-none overflow-y-auto sm:overflow-y-visible"
               >
                 {/* Close Button */}
                 <button
                   onClick={() => setSelectedCert(null)}
-                  className="absolute top-6 right-6 p-2 rounded-full border border-foreground/5 hover:border-foreground/20 bg-foreground/5 text-on-surface-variant hover:text-display transition-colors duration-300 flex items-center justify-center z-20"
+                  className="absolute top-4 right-4 sm:top-6 sm:right-6 p-2 rounded-full border border-foreground/5 hover:border-foreground/20 bg-foreground/5 text-on-surface-variant hover:text-display transition-colors duration-300 flex items-center justify-center z-20"
                 >
                   <X className="w-4 h-4" />
                 </button>
 
                 {/* Content Grid - Certificate Image + Details */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                   {/* Certificate Image */}
                   <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.4 }}
-                    className="flex items-center justify-center bg-black/20 rounded-2xl border border-foreground/10 overflow-hidden"
+                    className="flex items-center justify-center bg-black/20 rounded-xl sm:rounded-2xl border border-foreground/10 overflow-hidden min-h-60 sm:min-h-80"
                   >
                     <img
                       src={`/images/${selectedCert.imageLink}`}
                       alt={selectedCert.name}
-                      className="w-full h-auto max-h-96 object-contain"
+                      className="w-full h-full max-h-64 sm:max-h-96 object-contain p-2 sm:p-4"
                     />
                   </motion.div>
 
                   {/* Details Section */}
-                  <div className="flex flex-col justify-between">
+                  <div className="flex flex-col justify-between gap-4">
                     {/* Badge Indicator */}
-                    <div>
-                      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20 text-[10px] font-bold uppercase tracking-wider mb-6">
-                        <CheckCircle2 className="w-3.5 h-3.5" />
+                    <div className="space-y-3 sm:space-y-4">
+                      <div className="inline-flex items-center gap-2 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider">
+                        <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                         Verified Certification
                       </div>
 
                       {/* Title */}
-                      <h3 className="text-xl sm:text-2xl font-display font-bold text-display mb-2 leading-tight">
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-display leading-tight">
                         {selectedCert.name}
                       </h3>
 
                       {/* Issuer */}
-                      <p className="text-sm font-medium text-primary mb-6">
+                      <p className="text-xs sm:text-sm font-medium text-primary">
                         {selectedCert.issuer}
                       </p>
 
                       {/* Details list */}
-                      <div className="grid grid-cols-2 gap-3 py-4 px-4 rounded-xl border border-foreground/5 bg-foreground/[0.02] mb-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 py-3 sm:py-4 px-3 sm:px-4 rounded-lg sm:rounded-xl border border-foreground/5 bg-foreground/[0.02]">
                         <div className="flex flex-col">
-                          <span className="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant mb-1 flex items-center gap-1.5">
-                            <Calendar className="w-3 h-3 text-tertiary" /> Issue
-                            Year
+                          <span className="text-[8px] sm:text-[10px] uppercase font-bold tracking-widest text-on-surface-variant mb-1 flex items-center gap-1">
+                            <Calendar className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-tertiary" />{" "}
+                            Issue Year
                           </span>
-                          <span className="text-xs font-semibold text-display">
+                          <span className="text-xs sm:text-xs font-semibold text-display">
                             {selectedCert.date}
                           </span>
                         </div>
                         <div className="flex flex-col">
-                          <span className="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant mb-1 flex items-center gap-1.5">
-                            <Hash className="w-3 h-3 text-tertiary" />{" "}
+                          <span className="text-[8px] sm:text-[10px] uppercase font-bold tracking-widest text-on-surface-variant mb-1 flex items-center gap-1">
+                            <Hash className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-tertiary" />{" "}
                             Credential ID
                           </span>
-                          <span className="text-xs font-mono font-semibold text-display truncate">
+                          <span className="text-xs sm:text-xs font-mono font-semibold text-display truncate">
                             {selectedCert.credentialId}
                           </span>
                         </div>
                       </div>
 
                       {/* Syllabus Description */}
-                      <div className="flex flex-col mb-6 text-left">
-                        <h4 className="text-xs uppercase font-bold tracking-widest text-on-surface-variant mb-2">
+                      <div className="flex flex-col">
+                        <h4 className="text-[8px] sm:text-xs uppercase font-bold tracking-widest text-on-surface-variant mb-2">
                           Scope of Competency
                         </h4>
                         <p className="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
@@ -238,10 +238,10 @@ export default function Certifications() {
                     </div>
 
                     {/* Bottom Button */}
-                    <div className="flex justify-end pt-4 border-t border-foreground/5">
+                    <div className="flex justify-end pt-3 sm:pt-4 border-t border-foreground/5">
                       <button
                         onClick={() => setSelectedCert(null)}
-                        className="px-6 py-3 rounded-full border border-foreground/10 hover:border-foreground/30 text-display font-semibold uppercase tracking-wider text-xs bg-foreground/5 hover:bg-foreground/10 transition-all duration-300"
+                        className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-full border border-foreground/10 hover:border-foreground/30 text-display font-semibold uppercase tracking-wider text-[10px] sm:text-xs bg-foreground/5 hover:bg-foreground/10 transition-all duration-300 whitespace-nowrap"
                       >
                         Close Window
                       </button>

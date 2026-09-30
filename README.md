@@ -1,10 +1,23 @@
-# Nirjhor Akash Portfolio
+# Arman Hossain Showrav - Healthcare Professional Portfolio
 
-A modern, interactive, and responsive portfolio website showcasing full-stack development expertise, machine learning projects, and creative UI/UX engineering.
+A modern, interactive, and responsive portfolio website showcasing professional healthcare expertise, clinical certifications, and compassionate patient-centered care specialization.
 
 ## About
 
-This is a professional portfolio built with cutting-edge web technologies to demonstrate expertise in full-stack development, AI integration, and beautiful UI design. The portfolio features smooth animations, interactive components, and a seamless user experience.
+This is a professional portfolio for **Arman Hossain Showrav**, a dedicated Senior Healthcare Assistant with over 3 years of experience in the UK healthcare sector. The website demonstrates expertise in patient support, medication administration, mobility assistance, emotional care, and healthcare documentation with beautiful animations and seamless user experience.
+
+### Professional Summary
+
+Compassionate and dedicated healthcare professional committed to delivering high-quality patient-centered care with dignity, empathy, and professionalism. Experienced in residential care and healthcare support environments with proven ability to manage complex care plans and coordinate with multidisciplinary teams.
+
+## Key Expertise
+
+- **Clinical Skills** - Medication administration, first aid & CPR, patient monitoring, infection control
+- **Patient Care** - Personal hygiene assistance, emotional support, companionship, dignity & safeguarding
+- **Mobility Support** - Hoists operations, safe patient handling with mechanical equipment
+- **Professional Standards** - Healthcare documentation, health & safety compliance, team collaboration
+- **Certifications** - 20+ professional certifications in clinical, safety, and compliance areas
+- **Languages** - English Proficiency (B2+ | CEFR - OIETC)
 
 ## Tech Stack
 
@@ -14,55 +27,59 @@ This is a professional portfolio built with cutting-edge web technologies to dem
 - **React 19.2** - UI library
 - **Tailwind CSS 4** - Utility-first CSS framework
 - **Framer Motion** - Animation library for smooth, interactive UI
-- **GSAP** - Advanced animation toolkit
 - **Lucide React** - Beautiful icon library
-- **Lenis** - Smooth scrolling library
 
 ### Development Tools & Services
 
 - **ESLint** - Code quality
 - **Turbopack** - Fast bundler
 - **Git** - Version control
-- **Web3Forms** - Email form submission service (no backend required)
+- **Web3Forms** - Email form submission service
 
 ## Features
 
-- **Smooth Animations** - Framer Motion and GSAP for fluid, professional animations
+- **Professional Showcase** - Highlight of clinical expertise and patient care specialization
+- **Certification Gallery** - 20+ professional certifications with modal preview of certificate images
+- **Skills Mastery** - Organized by clinical, patient care, mobility, and professional categories
 - **Responsive Design** - Mobile-first approach with Tailwind CSS
-- **Dark Mode Support** - Professional dark theme
-- **Interactive Components** - Hover effects, animated cards, and smooth transitions
-- **Performance Optimized** - Fast loading, optimized images, and efficient code splitting
+- **Dark Theme** - Professional dark mode optimized for healthcare industry
+- **Interactive Components** - Animated cards, smooth transitions, and hover effects
+- **Performance Optimized** - Fast loading and efficient code splitting
 - **SEO Friendly** - Next.js built-in SEO optimization
-- **Accessibility** - WCAG compliant components
-- **Modern UI/UX** - Glass-morphism effects, gradient overlays, and beautiful color schemes
+- **Modern UI/UX** - Glass-morphism effects, gradient overlays, and professional color schemes
 
 ## 📂 Project Structure
 
 ```
 src/
-├── app/                      # Next.js app directory
-│   ├── globals.css          # Global styles
-│   ├── layout.js            # Root layout
-│   └── page.js              # Home page
-├── components/              # React components
-│   ├── About.jsx           # About section
-│   ├── Contact.jsx         # Contact form
-│   ├── Experience.jsx      # Work experience
-│   ├── Footer.jsx          # Footer
-│   ├── Hero.jsx            # Hero section
-│   ├── Navbar.jsx          # Navigation bar
-│   ├── Projects.jsx        # Projects showcase
-│   ├── Skills.jsx          # Skills section
-│   ├── Services.jsx        # Services offered
-│   ├── TechStack.jsx       # Tech stack carousel
-│   ├── Testimonials.jsx    # Client testimonials
-│   └── ui/                 # UI components
+├── app/                          # Next.js app directory
+│   ├── globals.css              # Global styles
+│   ├── layout.js                # Root layout
+│   └── page.js                  # Home page
+├── components/                  # React components
+│   ├── About.jsx               # Professional background
+│   ├── Certifications.jsx      # Certificate gallery with modal
+│   ├── Contact.jsx             # Contact form
+│   ├── Experience.jsx          # Work experience history
+│   ├── Footer.jsx              # Footer
+│   ├── Hero.jsx                # Hero section
+│   ├── Navbar.jsx              # Navigation bar
+│   ├── Projects.jsx            # Projects showcase
+│   ├── Section.jsx             # Section wrapper
+│   ├── Services.jsx            # Healthcare services offered
+│   ├── Skills.jsx              # Skills grid with animations
+│   ├── SmoothScroll.jsx        # Smooth scrolling
+│   ├── TechStack.jsx           # Tech stack
+│   ├── Testimonials.jsx        # Patient/client testimonials
+│   └── ui/                     # UI components
 │       ├── AnimatedBlob.jsx
 │       ├── MagneticButton.jsx
 │       ├── ScrollProgress.jsx
 │       └── SpotlightCard.jsx
-└── data/                   # Data files
-    └── portfolioData.js    # Portfolio content
+├── data/                       # Data files
+│   └── portfolioData.js       # Portfolio content, skills, certifications
+└── public/                     # Static assets
+    └── images/                # Certificate images and icons
 ```
 
 ## Getting Started
@@ -77,8 +94,8 @@ src/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/Nirjhor07/nirjhor-akash-portfolio.git
-   cd nirjhor-akash-portfolio
+   git clone https://github.com/Nirjhor07/portfolio-arman-hossain-showrav.git
+   cd portfolio-arman-hossain-showrav
    ```
 
 2. **Install dependencies**
@@ -97,11 +114,7 @@ src/
    NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
    ```
 
-   Get your Web3Forms access key:
-   - Go to [Web3Forms](https://web3forms.com)
-   - Sign up for a free account
-   - Copy your access key from the dashboard
-   - Paste it in the `.env.local` file
+   Get your Web3Forms access key from [Web3Forms](https://web3forms.com)
 
 4. **Run development server**
 
@@ -112,6 +125,7 @@ src/
    ```
 
 5. **Open browser**
+
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### Build for Production
@@ -123,42 +137,62 @@ npm start
 
 ## Key Sections
 
-- **Hero** - Engaging introduction with call-to-action
-- **About** - Professional background and capabilities
-- **Skills & Mastery** - Technical expertise with proficiency levels
-- **Services** - Offered services and specializations
-- **Projects** - Showcase of completed projects with live demos and source code
-- **Tech Stack** - Interactive carousel of technologies
-- **Experience** - Professional work history
-- **Testimonials** - Client feedback and reviews
-- **Contact** - Get in touch form powered by Web3Forms with email notifications
+- **Hero** - Professional introduction showcasing healthcare expertise
+- **About** - Comprehensive professional background and career highlights
+- **Skills & Expertise** - 20+ clinical, patient care, mobility, and professional skills
+- **Services** - Healthcare services offered including personal care, medication administration, emotional support
+- **Experience** - Professional work history in UK healthcare sector
+- **Certifications** - 20+ professional certifications with searchable gallery and certificate preview modal
+- **Testimonials** - Patient and family feedback
+- **Contact** - Professional inquiry form
 
 ## Design Highlights
 
-- **Spotlight Cards** - Interactive spotlight effect on hover
-- **Animated Blobs** - Smooth, organic background animations
-- **Magnetic Buttons** - Interactive buttons with magnetic effect
-- **Smooth Scroll** - Lenis-powered smooth scrolling experience
+- **Spotlight Cards** - Interactive spotlight effect on skill and certification cards
+- **Animated Blobs** - Smooth background animations
+- **Certificate Modal** - Interactive modal showing certificate images with details
+- **Responsive Grid** - Adaptive layout for skills and certifications across all devices
+- **Smooth Animations** - Framer Motion for fluid, professional transitions
+- **Category Filtering** - Search and filter certifications by category
 - **Progress Indicator** - Visual scroll progress bar
-- **Tech Stack Carousel** - Infinite scrolling animation with Lucide icons
-- **Web3Forms Integration** - Serverless email form submission
 
-## Contact Form
+## Features Overview
 
-The portfolio includes a fully functional contact form powered by **Web3Forms**, a free serverless email service:
+### Skills Section
 
-- **No backend server required** - Emails are sent directly from the browser
-- **Spam protection** - Built-in protection against spam submissions
-- **Email notifications** - Receive messages directly in your inbox
-- **Zero configuration** - Just add your access key and you're ready to go
-- **GDPR compliant** - Respects user privacy
+- **4 Categories**: Clinical, Patient Care, Mobility, Professional
+- **Responsive Grid**: 1-4 columns based on screen size
+- **Animated Cards**: Spring-based entrance animations with hover effects
+- **Category Badges**: Color-coded skill categories
 
-### How it works:
+### Certifications Section
 
-1. User fills out the contact form
-2. Form data is sent to Web3Forms API
-3. Email notification is sent to your inbox
-4. User receives a confirmation
+- **20+ Certifications**: Organized by category (Clinical, Safety, Compliance, Professional Development)
+- **Search Functionality**: Find certifications by name, issuer, or category
+- **Category Filtering**: Quick filter by certification type
+- **Certificate Preview**: Modal with certificate image and detailed information
+- **Responsive Layout**: Grid layout adapts to all screen sizes
+
+## Professional Background
+
+**Senior Healthcare Assistant** | Metropolitan Care Service Limited | February 2023 – Present
+
+Delivering high-quality, patient-centered care in residential care environment with expertise in:
+
+- Personal care support and hygiene assistance
+- Medication administration and health monitoring
+- Safe patient handling using mechanical equipment
+- Documentation and incident reporting
+- Health & safety compliance
+
+## Contact Information
+
+**Arman Hossain Showrav**
+
+- **Phone**: +44 7770 020061
+- **Email**: armanhossainshowrav9@gmail.com
+- **LinkedIn**: [Connect on LinkedIn](https://linkedin.com)
+- **Location**: UK
 
 ## License
 
@@ -166,21 +200,21 @@ This project is open source and available under the MIT License.
 
 ## Let's Connect
 
-I'm always interested in:
+I'm interested in:
 
-- Exciting full-stack projects
-- Machine learning opportunities
-- Creative design collaborations
-- Open source contributions
+- Healthcare support opportunities
+- Patient care coordination positions
+- Clinical training and development
+- Community health initiatives
 
-Feel free to reach out through:
+Feel free to reach out through the contact form or:
 
 - **GitHub**: [@Nirjhor07](https://github.com/Nirjhor07)
-- **LinkedIn**: [@nirjhor07](https://www.linkedin.com/in/nirjhor07)
-- **Twitter**: [@nirjhor07](https://twitter.com)
+- **Email**: armanhossainshowrav9@gmail.com
+- **Phone**: +44 7770 020061
 
 ---
 
-**Made with ❤️ by Ashraf Hossain Akash**
+**Made with ❤️ for compassionate healthcare**
 
 Last Updated: May 2026

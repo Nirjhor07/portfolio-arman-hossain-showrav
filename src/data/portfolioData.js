@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Arman Hossain Showrav",
   nickname: "Arman Showrav",
   handle: "AS",
-  title: "Senior Healthcare Assistant",
+  title: "Healthcare Assistant",
   tagline:
     "Compassionate and dedicated healthcare professional committed to delivering high-quality patient-centered care with dignity, empathy, and professionalism.",
   about: [
@@ -11,7 +11,7 @@ export const personalInfo = {
     "Possessing a solid science background and organizational acumen gained through business management studies, I bring a holistic, structured, and empathetic approach to every shift, ensuring health & safety compliance is always combined with warm companionship.",
   ],
   avatar: "/images/armann.png", // keeping the existing hero image
-  resumeUrl: "/Arman Hossain Showrav.pdf", // placeholder path for CV download
+  resumeUrl: "/Arman_Hossain_Showrav.pdf", // placeholder path for CV download
   education: [
     {
       degree: "Business Management",
@@ -36,7 +36,7 @@ export const personalInfo = {
     instagram:
       "https://www.instagram.com/arman_hossain_showrav_?igsh=MTlrbGtpZXBpbHdvdQ%3D%3D&utm_source=qr",
     facebook: "https://www.facebook.com/share/1CptJXhxWr/?mibextid=wwXIfr",
-    linkedin: "https://linkedin.com", // recruiter friendly placeholder
+    linkedin: "https://www.linkedin.com/in/arman-hossain-showrav", // recruiter friendly placeholder
   },
 };
 
@@ -127,7 +127,25 @@ export const techStack = {
 
 export const experience = [
   {
-    role: "Senior Healthcare Assistant",
+    role: "Healthcare Assistant (Senior Level)",
+    company: "Heathfield Residential and Nursing Home, Ashford",
+    period: "August 2025 – Present",
+    details:
+      "Carrying out senior-level duties within a residential and nursing home setting, managing complex care plans and coordinating directly with multidisciplinary teams. Key duties include safe medication administration, MAR chart logging, patient monitoring, care documentation, and strict infection control compliance. Skilled in mobility assistance using mechanical hoists and wheelchair aids.",
+    responsibilities: [
+      "Senior-level duty execution and complex care plan management",
+      "Multidisciplinary team coordination with nurses and supervisors",
+      "Safe medication administration & accurate MAR chart logging",
+      "Continuous patient health, well-being, and change-of-condition monitoring",
+      "Timely, accurate care documentation and incident reporting",
+      "Dignified personal care support (bathing, grooming, dressing, and privacy)",
+      "Mobility assistance utilizing mechanical hoists and wheelchair aids",
+      "Empathetic emotional support and trust-building with patients and relatives",
+      "Rigorous adherence to health & safety and infection control procedures",
+    ],
+  },
+  {
+    role: "Healthcare Assistant",
     company: "Metropolitan Care Service Limited",
     period: "February 2023 – Present",
     details:

@@ -71,7 +71,10 @@ export default function Contact() {
             </h3>
 
             <p className="text-sm font-light text-on-surface-variant leading-relaxed">
-              If you have any care support opportunities, want to request service details, or discuss community volunteer coordination, feel free to send a message. I am always happy to discuss how I can assist.
+              If you have any care support opportunities, want to request
+              service details, or discuss community volunteer coordination, feel
+              free to send a message. I am always happy to discuss how I can
+              assist.
             </p>
           </div>
 
@@ -123,7 +126,7 @@ export default function Contact() {
                   Location
                 </span>
                 <span className="text-xs sm:text-sm font-semibold text-display">
-                  106A Mile End Road, London, E1 4UN
+                  15 Brenchley Close, TN23 5SP
                 </span>
               </div>
             </div>
@@ -136,7 +139,10 @@ export default function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.56942921074!2d-0.05260172337672288!3d51.52110297181617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d3bf73cb109%3A0xe5a363db88caee31!2s106A%20Mile%20End%20Rd%2C%20London%20E1%204UN!5e0!3m2!1sen!2suk!4v1716123456789!5m2!1sen!2suk"
               width="100%"
               height="100%"
-              style={{ border: 0, filter: 'grayscale(20%) contrast(100%) opacity(85%)' }}
+              style={{
+                border: 0,
+                filter: "grayscale(20%) contrast(100%) opacity(85%)",
+              }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
