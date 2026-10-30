@@ -126,7 +126,7 @@ export default function Contact() {
                   Location
                 </span>
                 <span className="text-xs sm:text-sm font-semibold text-display">
-                  15 Brenchley Close, TN23 5SP
+                  ASHFORD KENT, UK
                 </span>
               </div>
             </div>
